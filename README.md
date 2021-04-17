@@ -1,10 +1,10 @@
-# GATSBY Real estate development landing page
+# Gatsby landing page
 
-Real estate development landing page to showcase in my portfolio
+Industrial design / interior design landing page project to showcase in my portfolio
 
-[Visit](https://www.coloniadevelopment.website)
+[Visit](https://www.distrial.website)
 
-![Home Image](https://github.com/leanug/colonia/blob/main/static/screenshot.jpg)
+![Home Image](https://github.com/leanug/distrial/blob/main/static/screenshot.png)
 
 ## Project Setup
 

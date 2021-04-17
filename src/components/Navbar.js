@@ -25,15 +25,16 @@ const Nav = styled.header`
   background: ${setColor.delta_1};
   display: flex;
   font-family: ${setFont.primaryFont};
+  justify-content: space-between;
+  min-height: 5rem;
   padding: 0 3rem;
-  position: fixed;
+  position: absolute;
   top: 0;
+  width: 100%;
   z-index: 10;
-  min-height: 6rem;
 
   .logo-wrap {
     align-items: center;
-    font-size: 2rem;
     font-weight: 500;
     letter-spacing: 3px;
   }
