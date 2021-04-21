@@ -16,14 +16,16 @@ const Slider = ({images}) => {
     return (
         <Background image={images[index]}>
             <Wrapper>
-                <button 
+                <button
+                    aria-label="Previous Image"
                     className="prev"
                     type="button" 
                     onClick={ () => setIndex(index - 1) } 
                 >
                     <BsChevronLeft />
                 </button>
-               <button 
+               <button
+                    aria-label="Next Image"
                     className="next"
                     type="button"
                     onClick={ () => setIndex(index + 1) } 
@@ -50,6 +52,7 @@ const Slider = ({images}) => {
 }
 
 const Wrapper = styled.div`
+    background: rgba(0, 0, 0, 0.5); 
     /* Next & previous buttons */
     height: 100vh;
     width: 100%;

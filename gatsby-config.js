@@ -4,7 +4,7 @@ module.exports = {
     titleTemplate: "%s · Distrial",
     description: "Distrial es un estudio de diseño con sede en Buenos Aires, Argentina.",
     siteUrl: "https://www.distrial.website", // No trailing slash allowed!
-    image: "/screenshot.png", // Path to your image you placed in the 'static' folder
+    image: "/screenshot.png", // 'static' folder
     twitterUsername: "",
   },
   plugins: [
@@ -47,6 +47,7 @@ module.exports = {
           ],
         },
         useMinify: true,
+        usePreload: false,
         usePreconnect: false,
       },
     },

@@ -144,6 +144,7 @@ var plugins = [{
       }]
     },
     "useMinify": true,
+    "usePreload": false,
     "usePreconnect": false
   }
 }]; // During bootstrap, we write requires at top of this file which looks like:

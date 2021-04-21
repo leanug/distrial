@@ -8,6 +8,30 @@ import SEO from '../components/SEO'
 import styled from 'styled-components'
 import { setSectionBg, setBreakpoint } from '../styles'
 
+export const query = graphql`
+  {
+    office: file(relativePath: {eq: "office.jpg"}) {
+      childImageSharp {
+        fluid(quality: 100, maxWidth: 1600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    images: allFile(filter: {relativeDirectory: {eq: "portfolio"}}, sort: {fields: childrenImageSharp___fixed___originalName}) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 1600) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
 const IndexPage = ({ data }) => {
   const { images: { edges: portfolioImages }} = data
 
@@ -18,7 +42,6 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO 
-        description="Find out everything you need about the great real estate development project in Colonia del sacramento."
         title="Home"
       />
 
@@ -87,30 +110,6 @@ const IndexPage = ({ data }) => {
     </Layout>
   )
 }
-
-export const query = graphql`
-  {
-    office: file(relativePath: {eq: "office.jpg"}) {
-      childImageSharp {
-        fluid(quality: 100, maxWidth: 1600) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    images: allFile(filter: {relativeDirectory: {eq: "portfolio"}}, sort: {fields: childrenImageSharp___fixed___originalName}) {
-      edges {
-        node {
-          id
-          childImageSharp {
-            fluid(quality: 100, maxWidth: 1600) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-  }
-`
 
 const Wrapper = styled.article`
     .section-bg {

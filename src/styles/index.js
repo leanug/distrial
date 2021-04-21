@@ -5,7 +5,7 @@
  export const setColor = {
     alpha  : "#FF1010", // Red
     beta   : "#0080FF", // Blue
-    gamma  : "#46ad2a", // Green
+    gamma  : "#FF1010", // Green
     delta_1: "#1F1F1F", // Dark 1
     delta_2: "#565656", // Dark 2
     delta_3: "#666666", // Dark 3

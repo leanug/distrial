@@ -9,7 +9,7 @@ var plugins = [{
       options: {"plugins":[],"displayName":true,"fileName":true,"minify":true,"namespace":"","transpileTemplateLiterals":true,"pure":false},
     },{
       plugin: require('/home/leanug/aerion/extraterrestre/node_modules/gatsby-plugin-webfonts/gatsby-ssr'),
-      options: {"plugins":[],"fonts":{"google":[{"family":"Poppins","variants":["300","400","500"],"fontDisplay":"swap","strategy":"selfHosted"},{"family":"Source Sans Pro","variants":["300","400","500","700"],"fontDisplay":"swap","strategy":"selfHosted"}]},"useMinify":true,"usePreconnect":false},
+      options: {"plugins":[],"fonts":{"google":[{"family":"Poppins","variants":["300","400","500"],"fontDisplay":"swap","strategy":"selfHosted"},{"family":"Source Sans Pro","variants":["300","400","500","700"],"fontDisplay":"swap","strategy":"selfHosted"}]},"useMinify":true,"usePreload":false,"usePreconnect":false},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

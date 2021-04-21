@@ -89,7 +89,6 @@ const query = graphql`
         defaultDescription: description
         siteUrl
         defaultImage: image
-        twitterUsername
       }
     }
   }
