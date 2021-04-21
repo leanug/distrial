@@ -52,7 +52,7 @@ const Slider = ({images}) => {
 }
 
 const Wrapper = styled.div`
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.2); 
     /* Next & previous buttons */
     height: 100vh;
     width: 100%;
