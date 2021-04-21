@@ -7,19 +7,33 @@ import {
 const Contact = () => (
     <Wrapper>
         <form>
-            <input 
-                type="text" 
-                name="name"
-                className="form-control"
-                placeholder="Nombre"
-            />
-            <input 
-                type="email" 
-                name="name"
-                className="form-control"
-                placeholder="Email"
-            />
-            <textarea placeholder="Mensaje" name="message" rows="5" className="form-control"></textarea>
+            <label>Nombre
+                <input 
+                    type="text" 
+                    name="name"
+                    className="form-control"
+                    placeholder="Nombre"
+                />
+            </label>
+            <label>
+                Email
+                <input 
+                    type="email" 
+                    name="name"
+                    className="form-control"
+                    placeholder="Email"
+                />
+            </label>
+            <label>
+                Mensaje
+                <textarea 
+                    placeholder="Mensaje" 
+                    name="message" 
+                    rows="5" 
+                    className="form-control"
+                >
+                </textarea>
+            </label>
             <button aria-label="Send Message" type="submit" value="Send">enviar mensaje</button>
         </form>
         <p className="grey">* No compartiremos tu email con terceros.</p>
