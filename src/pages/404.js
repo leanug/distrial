@@ -13,9 +13,9 @@ const NotFoundPage = () => {
             title="404 Pagina no encontrada"
             />
             <Wrapper>
-                <h1>404</h1>
-                <h3>Pagina no encontrada</h3>
                 <div>
+                    <h1>404</h1>
+                    <h3>Pagina no encontrada</h3>
                     <Link to="/" className="btn">Inicio</Link>
                 </div>
             </Wrapper>
@@ -24,11 +24,15 @@ const NotFoundPage = () => {
 }
 
 const Wrapper = styled.section`
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
     margin: 14rem 0;  
     text-align: center;
     ${setContainer.container};
 
-    div {
+    .btn {
         margin-top:3rem;
     }
 `
